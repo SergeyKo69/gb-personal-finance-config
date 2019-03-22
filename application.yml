@@ -1,0 +1,40 @@
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: ${EUREKA_URL:https://user:123456@gb-discovery-server.herokuapp.com:5000}/eureka/
+#security:
+#  user:
+#    password: ${eureka.password}
+#exception:
+#  printStackTrace: true
+#
+#spring:
+#  application:
+#    name: configserver
+##  profiles:
+##    active: config
+#  eureka:
+#    instance:
+#      hostname: ${DOMAIN_NAME}
+#    client:
+#      registerWithEureka: true
+#      fetchRegistry: true
+#      serviceUrl:
+#        defaultZone: ${EUREKA_PEER_URL}/eureka/
+#    password: ${USER_PASSWORD:password}
+
+signing:
+  key: "cGVyc29uYWwgZmluYW5jZSBzZXJ2aWNl"
+
+# For detailed logging during development
+logging:
+  level:
+    org:
+      com: ERROR
+      springframework: ERROR
+      hibernate:
+        sql: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: ERROR
