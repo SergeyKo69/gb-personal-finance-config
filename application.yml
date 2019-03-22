@@ -1,7 +1,7 @@
 #eureka:
 #  client:
 #    serviceUrl:
-#      defaultZone: ${EUREKA_URL:https://user:123456@gb-discovery-server.herokuapp.com:5000}/eureka/
+#      defaultZone: ${EUREKA_URL:https://user:password@localhost:5000}/eureka/
 #security:
 #  user:
 #    password: ${eureka.password}
