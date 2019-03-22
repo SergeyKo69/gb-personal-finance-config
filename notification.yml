@@ -2,11 +2,11 @@ spring:
   main:
     allow-bean-definition-overriding: true
   datasource:
-    url: jdbc:postgresql://ec2-54-217-207-242.eu-west-1.compute.amazonaws.com:5432/deu5j42a386hn5
-    username: bnbvjzansjrmwe
-    password: 8dc14607d88d188da5ef0f37d4da8e018e30644e1e12b66a41d5d3232b9a8c95
+    url: ${DB_URL_NOTIFY}
+    username: ${DB_USERNAME_NOTIFY}
+    password: ${DB_PASSWORD_NOTIFY}
     driver-class-name: org.postgresql.Driver
-  jpa:
+  jpa:jdbc
     hibernate:
       ddl-auto: update
     properties:
