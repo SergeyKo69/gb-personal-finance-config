@@ -6,7 +6,7 @@ spring:
     username: ${DB_USERNAME_NOTIFY}
     password: ${DB_PASSWORD_NOTIFY}
     driver-class-name: org.postgresql.Driver
-  jpa:jdbc
+  jpa:
     hibernate:
       ddl-auto: update
     properties:
