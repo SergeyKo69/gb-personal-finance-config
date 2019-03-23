@@ -1,6 +1,6 @@
 spring:
   profile: prodaction
-  datasource:jdbc
+  datasource:
     url: ${DB_URL_ACOOUNT}
     username: ${DB_USERNAME_ACCOUNT}
     password: ${DB_PASSWORD_ACCOUNT}
