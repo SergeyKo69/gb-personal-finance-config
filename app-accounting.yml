@@ -1,5 +1,5 @@
 spring:
-  profile: prodaction
+  profile: heroku
   datasource:
     url: ${DB_URL_ACOOUNT}
     username: ${DB_USERNAME_ACCOUNT}
