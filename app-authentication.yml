@@ -1,5 +1,5 @@
 server:
-  port: 8901
+  port: ${PORT:8901}
 
 spring:
   profile: heroku
