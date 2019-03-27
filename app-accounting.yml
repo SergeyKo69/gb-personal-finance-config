@@ -1,3 +1,6 @@
+server:
+  port: ${PORT:10150}
+  
 spring:
   profile: heroku
   datasource:
@@ -19,6 +22,3 @@ spring:
         max_fetch_depth: 3
         temp:
           use_jdbc_metadata_defaults: false
----
-server:
-  port: ${PORT:10150}
