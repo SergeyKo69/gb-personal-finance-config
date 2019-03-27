@@ -7,7 +7,7 @@ server:
 spring:
   profile: heroku
   datasource:
-    url: ${DB_URL_ACCOUNT}
+    url: ${DB_URL_ACCOUNT:jdbc:postgresql://ec2-54-217-208-105.eu-west-1.compute.amazonaws.com:5432/d78kp44e5carll}
     username: ${DB_USERNAME_ACCOUNT}
     password: ${DB_PASSWORD_ACCOUNT}
     driver-class-name: org.postgresql.Driver
