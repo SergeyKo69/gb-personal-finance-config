@@ -1,3 +1,6 @@
+application:
+  name: app-accounting
+  
 server:
   port: ${PORT:10150}
   
