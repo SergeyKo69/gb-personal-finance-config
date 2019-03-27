@@ -2,6 +2,7 @@ server:
   port: ${PORT:10152}
 
 spring:
+  profile: heroku
   datasource:
     url: ${DB_URL_STATISTIC}
     username: ${DB_USERNAME_STATISTIC}
